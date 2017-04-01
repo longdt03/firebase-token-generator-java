@@ -95,3 +95,24 @@ tokenOptions.setAdmin(true);
 TokenGenerator tokenGenerator = new TokenGenerator("<YOUR_FIREBASE_SECRET>");
 String token = tokenGenerator.createToken(authPayload, tokenOptions);
 ```
+# ---API---
+## Thống kê cài đặt
+
+1. [App ID](http://sdkstat.api-restlet.com/apo/device/AppStat?sd=170320&ed=170330): 
+    - http://sdkstat.api-restlet.com/apo/device/AppStat?sd=<start_date>&ed=<end_date>
+2.  [Quốc Gia](http://sdkstat.api-restlet.com/apo/device/CountryStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster&ir=google-play): 
+    - http&#58;//sdkstat.api-restlet.com/apo/device/CountryStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
+    - http://sdkstat.api-restlet.com/apo/device/CountryStat?app_id=<package_name>sd=<start_date>&ed=<end_date>&ir=<install_referrer>
+3.  [Install Referrer](http://sdkstat.api-restlet.com/apo/device/IRStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster&country_code=vn): 
+    - http://sdkstat.api-restlet.com/apo/device/IRStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
+    - http://sdkstat.api-restlet.com/apo/device/IRStat?app_id=<package_name>sd=<start_date>&ed=<end_date>&country_code=<country_code>
+4. [Ngôn ngữ](http://sdkstat.api-restlet.com/apo/device/LanguageStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster): 
+    - http://sdkstat.api-restlet.com/apo/device/LanguageStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
+5. [Ngày cài đặt](http://sdkstat.api-restlet.com/apo/device/AppStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster): 
+    - http://sdkstat.api-restlet.com/apo/device/DateStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
+6. [Nguồn cài đặt](http://sdkstat.api-restlet.com/apo/device/SourceStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster): 
+    - http://sdkstat.api-restlet.com/apo/device/SourceStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
+7. [Phiên bản HĐH](http://sdkstat.api-restlet.com/apo/device/OSStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster): 
+    - http://sdkstat.api-restlet.com/apo/device/OSStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
+
+
