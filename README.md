@@ -99,9 +99,9 @@ String token = tokenGenerator.createToken(authPayload, tokenOptions);
 ## Thống kê cài đặt
 
 1. [App ID](http://sdkstat.api-restlet.com/apo/device/AppStat?sd=170320&ed=170330): 
-    - http://sdkstat.api-restlet.com/apo/device/AppStat?sd=<start_date>&ed=<end_date>
+    - http\://sdkstat.api-restlet.com/apo/device/AppStat?sd=<start_date>&ed=<end_date>
 2.  [Quốc Gia](http://sdkstat.api-restlet.com/apo/device/CountryStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster&ir=google-play): 
-    - http&#58;//sdkstat.api-restlet.com/apo/device/CountryStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
+    - http://sdkstat.api-restlet.com/apo/device/CountryStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
     - http://sdkstat.api-restlet.com/apo/device/CountryStat?app_id=<package_name>sd=<start_date>&ed=<end_date>&ir=<install_referrer>
 3.  [Install Referrer](http://sdkstat.api-restlet.com/apo/device/IRStat?sd=170320&ed=170330&app_id=com.loudsound.visualizer.volumebooster&country_code=vn): 
     - http://sdkstat.api-restlet.com/apo/device/IRStat?app_id=<package_name>sd=<start_date>&ed=<end_date>
